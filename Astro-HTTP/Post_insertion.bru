@@ -1,0 +1,20 @@
+meta {
+  name: Post_insertion
+  type: http
+  seq: 6
+}
+
+post {
+  url: {{url}}/api/posts
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": 100,
+    "name": "Jesus",
+    "age": 27,
+    "isActive": true
+  }
+}

@@ -1,0 +1,15 @@
+meta {
+  name: Post_by_slug--params
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{url}}/api/posts?slug=first-post
+  body: none
+  auth: inherit
+}
+
+params:query {
+  slug: first-post
+}
