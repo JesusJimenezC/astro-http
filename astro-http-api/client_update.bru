@@ -1,0 +1,19 @@
+meta {
+  name: client_update
+  type: http
+  seq: 11
+}
+
+patch {
+  url: {{url}}/api/clients/10
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Diana Laura Cruz",
+    "age": 26,
+    "isActive": true
+  }
+}

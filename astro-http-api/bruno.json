@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "name": "Astro-HTTP",
+  "name": "astro-http-api",
   "type": "collection",
   "ignore": [
     "node_modules",
