@@ -1,0 +1,22 @@
+meta {
+  name: put_likes
+  type: http
+  seq: 13
+}
+
+put {
+  url: {{url}}/api/likes/first-post
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "likes": 2
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -7,10 +7,12 @@ import cloudflare from '@astrojs/cloudflare';
 
 import db from '@astrojs/db';
 
+import vue from '@astrojs/vue';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [mdx(), sitemap(), db()],
+  integrations: [mdx(), sitemap(), db(), vue()],
 
   // Cloudflare adapter
   output: 'static',

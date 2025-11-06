@@ -10,11 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^12.4.0",
-    "@astrojs/db": "^0.14.10",
-    "@astrojs/mdx": "^4.2.1",
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.3.0",
-    "astro": "^5.5.4"
+    "@astrojs/cloudflare": "12.6.10",
+    "@astrojs/db": "0.18.2",
+    "@astrojs/mdx": "4.3.9",
+    "@astrojs/rss": "4.0.13",
+    "@astrojs/sitemap": "3.6.0",
+    "@astrojs/vue": "^5.1.2",
+    "astro": "5.15.2",
+    "canvas-confetti": "1.6.0",
+    "lodash.debounce": "^4.0.8",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "1.6.0",
+    "@types/lodash.debounce": "^4.0.9"
   }
 }

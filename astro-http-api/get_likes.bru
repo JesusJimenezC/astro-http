@@ -1,0 +1,16 @@
+meta {
+  name: get_likes
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{url}}/api/likes/first-post
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

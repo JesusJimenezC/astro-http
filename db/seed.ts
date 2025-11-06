@@ -1,4 +1,5 @@
-import { Clients, db } from 'astro:db';
+import { Clients, db, Posts } from 'astro:db';
+import { getCollection } from 'astro:content';
 
 // https://astro.build/db/seed
 export default async function seed() {
@@ -9,6 +10,16 @@ export default async function seed() {
     { id: 4, name: 'Bob Brown', age: 35, isActive: false },
     { id: 5, name: 'Charlie Davis', age: 22, isActive: true },
   ]);
+
+  const posts = await getCollection('blog');
+
+  await db.insert(Posts).values(
+    posts.map((post) => ({
+      id: post.id,
+      title: post.data.title,
+      likes: Math.floor(Math.random() * 100),
+    })),
+  );
 
   console.log('Seed executed successfully!');
 }
